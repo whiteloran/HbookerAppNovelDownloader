@@ -24,8 +24,8 @@ class Book:
         self.index = index
         self.book_info = book_info
         self.book_id = book_info['book_id']
-        self.book_name = book_info['book_name'].replace(' ', '',',')
-        self.author_name = book_info['author_name'].replace(' ', '',',')
+        self.book_name = book_info['book_name'].replace(',','')
+        self.author_name = book_info['author_name'].replace(',','')
         self.cover = book_info['cover'].replace(' ', '')
         self.last_chapter_info = book_info['last_chapter_info']
         self.division_list = []
